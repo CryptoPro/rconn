@@ -10,6 +10,6 @@ Say your IP address is 11.11.11.11, and you've got machine 22.22.22.22 behind fi
 `rconn -s 1111 2222`
 And in the machine behind firewall/NAT you'd have to run this:
 `rconn -c 11.11.11.11 1111 127.0.0.1 3389`
-Now you can connect to your own port 2222 with an RDP client, this will effectively be same as connecting to 22.22.22.22:3389.
+Now you can connect to your own port 2222 with an RDP client, this will effectively be same as connecting to 22.22.22.22:3389. You can also change "127.0.0.1" to any other host the target machine has access to.
 
 Usually most firewalls allow all outbound traffic but if this is not the case then you can try 80 or 443 instead of 1111.
